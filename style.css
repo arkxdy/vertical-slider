@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+}
+.left{
+    width: 50%;
+}
+.right{
+    width: 50%;
+}
+.announcementImage{
+    width: 90%;
+}
+.slider-container{
+    height: 200px;
+    width: 400px;
+}
+.announcementContainer{
+    overflow-y: scroll;
+    height: 200px;
+    width: 400px;
+}
+li{
+    list-style: none;
+}

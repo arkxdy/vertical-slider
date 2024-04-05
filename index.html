@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="script.js"></script>   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body ng-app="my-app">
+    <div class="container">
+        <div class="left">
+            Some Content
+        </div>
+        <div class="right" ng-controller="slider">
+            <h2>Slider</h2>
+            <div class="slider-container">
+                
+                <ul class="announcementContainer">
+                    <li class="announcementList" ng-repeat="image in images">
+                        <div class="announcementDetails">
+                            <div class="imageSection">
+                                <img class="announcementImage" src="{{image.imageUrl}}"/>
+                            </div>
+                            <div class="contentSection">
+                                <a class="announcementTitle" href="{{image.imageLink}}">
+                                    <div class="announcementContent">
+                                        {{image.imageInformation}}
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
